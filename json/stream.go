@@ -10,6 +10,11 @@ import (
 
 type Msg struct {
 	Name, Text string
+	//  sample json file which we wish to parse.
+	//  [
+	//		{"Name": "Ed", "Text": "Knock knock."},
+	//		{"Name": "Sam", "Text": "Go fmt who?"}
+	//	]
 }
 
 //parsing of json file as a stream of data => less memory footprint, as we read record by record
